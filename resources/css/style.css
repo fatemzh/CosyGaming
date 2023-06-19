@@ -1,0 +1,981 @@
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW MOBILE (IPHONE X) WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+*{
+    margin: 5px auto;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+    
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 250, 254);
+    background: rgb(224,240,255);
+    height: fit-content;
+    width: 375px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+}
+
+h1 a{
+    font-size: 80px;
+    color: rgb(255, 250, 254);
+}
+    
+h2{
+    display: flex;
+    align-items: center;
+    width: 310px;
+    height: 50px;
+    font-size: 20px;
+    background: rgb(156,209,255);
+    box-shadow:  5px 5px 3px #cfcfdf,
+    5px 5px 3px #f4f4ff;
+    border-radius: 17px;
+    padding: 10px;
+    margin: 5px;
+}
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW BARRE DE NAVIGATION LATERALE WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+    /* Je n'ai pas réussi à rendre cette barre responsive, je l'afficherai quand cela sera possible.*/
+
+#navSidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    left: 10px;
+    top: 120px;
+    height: 500px;
+    width: 70px;
+    border-radius: 17px;
+    background-color: rgb(156,209,255);
+    padding: 10px;
+}
+
+#navSidebar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 10px;
+    height: 100%;     
+}
+
+#navSidebar ul li {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px 0;
+}
+
+#navSidebar ul li a{
+    cursor: pointer;
+}
+
+#navSidebar ul li img {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px; 
+}
+
+@media screen and (max-width: 767px) {
+    #navSidebar {
+        display: none;
+    }
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW NAVBAR (PAGE BLOG ET STATISTIQUES SEULEMENT) WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+#navPage{
+    width: 350px;
+    margin: 0 auto;
+    margin: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding-bottom: 5px;
+}
+
+#navPage ul{
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    height: 20px;
+    border-radius: 17px;
+    background: rgb(156,209,255);
+    box-shadow:  5px 5px 3px #cfcfdf,
+    5px 5px 3px #f4f4ff;
+    padding: 15px;
+}
+
+#navPage ul li{
+    list-style: none;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+#navPage ul li a{
+    color: white;
+}
+
+#navPage a:hover{
+    color: rgb(160, 150, 255);
+    cursor: pointer;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW INDEX WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+#sectionIndex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+    width: 320px;
+    height: 600px;
+    border-radius: 17px;
+    background: rgb(241,248,255);
+    box-shadow:  5px 5px 3px #cfcfdf, 5px 5px 3px #f4f4ff;
+    padding: 10px;
+    margin:10px auto;
+}
+
+#content{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#content img{
+    width: 300px;
+    height: 210px;
+    border-radius: 17px;
+}
+
+p#index{
+    width: 290px;
+    border-radius: 17px;
+    background: #9CD1FF;
+    box-shadow:  5px 5px 3px #cfcfdf, 5px 5px 3px #f4f4ff;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#sectionIndex button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    color: #fff;
+    background-color: #efd4fa;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.2);
+    transition: background-color 0.5s ease;
+}
+
+#startBlog:hover {
+    background-color: #1b8cd9;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW PAGE BLOG WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWW A LA UNE WWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    border-radius: 17px;
+    background: rgb(241,248,255);
+    box-shadow:  5px 5px 3px #cfcfdf,
+    5px 5px 3px #f4f4ff;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWW A LA UNE WWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+#sectionALaUne{
+    margin: 0;
+}
+
+iframe{
+    border-radius: 17px;
+    margin: 10px;
+    width: 350px;
+    height: 200px;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWW NOS REVIEW WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+.reviewArticle{
+    display: flex;
+    flex-direction: column;
+    width:350px;
+    font-size: 12px;
+    background: rgb(255, 255, 255, 0.6);
+    box-shadow:  5px 5px 3px #cfcfdf,
+    5px 5px 3px #f4f4ff;
+    border-radius: 17px;
+    padding: 6px;
+}
+
+#reviews h3{
+    font-size: 18px;
+    color: rgb(67, 53, 148);
+}
+
+#reviews img{
+    width: 340px;
+    height: 250px;
+    border-radius: 17px;
+    margin: 5px auto;
+}
+
+#reviews p{
+    width: 320px;
+    padding: 10px;
+    font-size: 13px;
+    color: black;
+}
+
+.textReview{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW NOS FAVORIS WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+#ACNH, #stardew, #childrenOfTheLight, #tchia, h4#ACNH, h4#stardew, h4#childrenOfTheLight,
+h4#tchia, p#ACNH, p#stardew, p#childrenOfTheLight, p#tchia{
+    width: 350px;
+}
+
+#firstRowFavoris, #secondRowFavoris{
+    display: flex;
+    flex-direction: column;
+}
+
+#ACNH, #stardew, #childrenOfTheLight, #tchia{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    background: rgb(255, 255, 255, 0.6);
+    box-shadow:  5px 5px 3px #cfcfdf,
+    5px 5px 3px #f4f4ff;
+    border-radius: 17px;
+    padding: 6px;
+    margin: 15px auto;
+    color: black;
+    height: 500px;
+    width: 350px;
+}
+
+.nosFavoris img{
+    width: 350px;
+    height: 200px;
+    border-radius: 17px;
+    margin: 10px auto;
+}
+
+.signature {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
+}
+
+.signature img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.signature h5{
+    display: flex;
+    align-self: center;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW PROCHAINES SORTIES WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+#prochainesSorties{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    width: 350px;
+    height: 400px;
+}
+
+#dates, #titresJeux{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#dates p, #titresJeux p{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: rgba(232, 223, 255, 0.6);
+    box-shadow:  5px 5px 3px #cfcfdf,
+    5px 5px 3px #f4f4ff;
+    color: black;
+}
+
+#dates p{
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 90px;
+    font-size:14px;
+}
+
+#titresJeux p{
+    width: 270px;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 17px;
+    font-size: 20px;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW STATISTIQUES WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+.statistiques p{
+    font-size: 12px;
+    background: rgb(255, 255, 255, 0.6);
+    box-shadow:  5px 5px 3px #cfcfdf,
+    5px 5px 3px #f4f4ff;
+    border-radius: 17px;
+    padding: 10px;
+    margin: 25px auto;
+    color: black;
+}
+
+.statistiques img{
+    width: 350px;
+    margin-left: 5px;
+}
+
+img.type-of-game{
+    margin: 0 auto;
+    height: 250px;
+}
+
+img.motivations {
+    margin: 10px auto;
+    height: 200px;
+}
+
+p.explanation{
+    width: 300px;
+    font-size: 15px;
+    padding: 20px;
+}
+
+#topGraphRight, .topGraphLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 0 auto;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW CONTACT WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+#sectionContact{
+    display: flex;
+    margin: 20px auto;
+    background-color: #F1F8FF;
+    padding: 10px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    width: 350px;
+    height: 820px;
+}
+
+h2.contact {
+    background:none;
+    box-shadow: none;
+    color: white;
+    font-size: 30px;
+    width: 200px;
+    margin: 0;
+}
+
+#contactInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:#9CD1FF;
+    padding: 20px;
+    border-radius: 17px;
+    color: white;
+    height: 230px;
+    width: 320px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+#contactInfo ul li {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+#contactInfo ul li a{
+    color: white;
+    text-decoration: underline;
+}
+
+#formArea {
+    width : 300px;
+    background-color: rgb(163, 200, 255);
+    padding: 20px;
+    border-radius: 17px;
+}
+
+#sectionContact #form-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#sectionContact label {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#sectionContact input[type="text"], #sectionContact input[type="email"], #sectionContact textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border-radius: 17px;
+}
+
+#sectionContact textarea {
+    height: 50px;
+}
+
+#sectionContact .submit-button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px;
+    border: none;
+    background-color: #ffa3dc;
+    width: 50%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sectionContact .submit-button:hover {
+    background-color:  rgb(243, 78, 255);
+}
+
+#sectionContact ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+#sectionContact ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#sectionContact .imgForm{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+a#sectionContact {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+#sectionContact {
+    flex-direction: column;
+    width: 80%;
+}
+
+#contactInfo, #formArea {
+    width: 80%;
+    margin: 10px 0;
+}
+
+#sectionContact .submit-button {
+    width: 80%;
+}
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW MOBILE FOOTER WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    background: rgb(156,209,255);
+    border-top-right-radius: 19px;
+    border-top-left-radius: 19px;
+}
+
+#logo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+footer ul li{
+    list-style: none;
+    font-size: 12px;
+}
+
+footer ul li a{
+    color: white;
+    cursor: pointer;
+}
+
+footer a:hover{
+    color: rgb(160, 150, 255);
+    cursor: pointer;
+}
+
+#socialMedias{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+#socialMedias img{
+    height: 25px;
+    width: 25px;
+    padding-bottom: 5px;
+}
+
+#newsletterForm{
+    display: flex;
+    flex-direction: column;
+    margin:5px;
+    font-size: 9px;
+}
+
+#newsletterForm label{
+    display: flex;
+    align-self: flex-start;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#mailSaisie{
+    display: flex;
+    flex-direction: row;
+}
+
+#newsletterForm input{
+    font-size: 9px;
+    border: solid 2px white;
+    padding: 3px;
+    background: transparent;
+    width: 70px;
+}
+
+::placeholder{
+    color: white;
+}
+
+input#email{
+    color: white;
+}
+
+button{
+    width: fit-content;
+    border: solid 2px rgb(255, 255, 255);
+    background: transparent;
+    color: white;
+    padding: 3px;
+    margin-left: 1px;
+    font-size: 9px;
+    cursor: pointer;
+    width: 30px;
+}
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW DESKTOP WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+@media screen and (min-width: 769px) {
+
+    body{
+        /* NE PAS TOUCHER SINON LE FOOTER CHANGE DE TAILLE */
+        width: 100%; 
+    }
+
+    h1 a{
+        font-size: 130px;
+    }
+        
+    h2{
+        width: 1000px;
+        height: 60px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW BARRE DE NAVIGATION LATERALE WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    #navSidebar ul li {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #navSidebar ul li a{
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+    }
+
+    #navSidebar ul li img {
+        height: 40px;
+        width: 40px;
+    }
+
+        /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW NAVBAR (PAGE BLOG ET STATISTIQUES SEULEMENT) WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    #navPage{
+        width: 1000px;
+        padding-bottom: 10px;
+    }
+
+    #navPage ul{
+        width: 1000px;
+        height: 50px;
+    }
+    #navPage ul li{
+        font-size: 25px;
+    }
+
+    #navPage ul li a{
+        color: white;
+    }
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW INDEX WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    #sectionIndex{
+        width: 1100px;
+        height: 700px;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #content img{
+        width: 550px;
+        height: 300px;
+    }
+
+    p#index {
+        width: 450px;
+        height: 250px;
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    #content img, #content p {
+        flex: 1;
+        margin: 10px;
+    }
+
+    #startBlog {
+        width: 250px;
+        font-size: 25px;
+        padding: 20px 20px;
+    }
+
+    #startBlog:active {
+        transform: scale(1.1) rotate(10deg);
+        transition: transform 0.2s ease;
+    }
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW PAGE BLOG WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    #blog{
+        width: 1100px;
+    }
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWW A LA UNE WWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    iframe{
+        border-radius: 17px;
+        margin: 20px;
+        width: 1000px;
+        height: 565px;
+    }
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWW NOS REVIEW WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    .reviewArticle{
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        width: 1000px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #reviews h3{
+        font-size: 30px
+    }
+
+    #reviews img{
+        width: 500px;
+        height: 300px;
+        padding: 10px;
+    }
+
+    #reviews p{
+        font-size: 17px;
+    }
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW NOS FAVORIS WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    #ACNH, #stardew, #childrenOfTheLight, #tchia, h4#ACNH, h4#stardew, h4#childrenOfTheLight,
+    h4#tchia, p#ACNH, p#stardew, p#childrenOfTheLight, p#tchia{
+        width: 500px;
+    }
+
+    #firstRowFavoris, #secondRowFavoris{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #ACNH, #stardew, #childrenOfTheLight, #tchia{
+        font-size: 15px;
+        height: 580px;
+        margin: 10px;
+    }
+
+    .nosFavoris img{
+        height: 300px;
+        width: 500px;
+    }
+
+    .signature img{
+        height: 50px;
+        width: 50px;
+    }
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW PROCHAINES SORTIES WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    #prochainesSorties{
+        width: 1000px;
+        height: 700px;
+        padding: 30px;
+    }
+
+    #dates p{
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        font-size:18px;
+    }
+
+    #titresJeux p{
+        width: 900px;
+        height: 80px;
+        padding-left: 10px;
+        font-size: 25px;
+    }
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW STATS WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    img.type-of-game, img.motivations{
+        width: 800px;
+    }
+
+    img.type-of-game{
+        margin: 0 auto;
+        height: 550px;
+    }
+
+    img.motivations {
+        margin: 10px auto;
+        height: 500px;
+    }
+
+    p.explanation{
+        width: 1000px;
+        font-size: 18px;
+    }
+
+    #topGraphRight, .topGraphLeft{
+        display: flex;
+        flex-direction: row;
+        width: 1000px;
+    }
+
+    #topGraphRight{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .topGraphLeft img{
+        width: 500px;
+        height: 500px;
+    }
+
+    #topGraphRight img{
+        width: 550px;
+        height: 450px;
+    }
+
+    #bottomGraphs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW CONTACT WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    #sectionContact{
+        margin: 50px auto;
+        width: 1100px;
+        height: 700px;
+        padding: 30px;
+        flex-grow: 1;
+    }
+
+    h2.contact{
+        font-size: 50px;
+        width: 400px
+    }
+
+    #contactInfo {
+        height: 350px;
+        margin: auto 20px;
+        width: 400px;
+        font-size: 20px;
+    }
+
+    #contactInfo ul li img {
+        margin-right: 10px;
+    }
+
+    #formArea {
+        width : 700px;
+        height: 650px;
+    }
+
+    #sectionContact label, #sectionContact input, textarea {
+        margin: 0;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    #sectionContact input[type="text"], #sectionContact input[type="email"], #sectionContact textarea {
+        width: 300px;
+        color: white;
+    }
+
+    #sectionContact .submit-button {
+        width: 250px;
+        height: 50px;
+    }
+
+    #sectionContact .submit-button:hover{
+        background-color: #1b8cd9;
+    }
+
+    #sectionContact .imgForm{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW DESKTOP FOOTER WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+    footer{
+        width: 100%;
+    }
+
+    #logo img{
+        height: 100px;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    footer ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer ul li a{
+        font-size: 20px;
+    }
+
+    footer a:hover{
+        color: rgb(160, 150, 255);
+        cursor: pointer;
+    }
+
+    #socialMedias img{
+        height: 35px;
+        width: 35px;
+        padding: 5px;
+    }
+
+    #mailSaisie{
+        width: 350px;
+    }
+
+    #newsletterForm label{
+        font-size: 23px;
+    }
+
+    #newsletterForm input, #newsletterForm button{
+        width: 230px;
+        font-size: 20px;
+    }
+}

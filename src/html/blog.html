@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!--
+        Autrice         : ABID Fatima
+        Date            : 04.06.2023
+        Description     : page principale du blog contenant des revues de jeux vidéos, des articles sur les
+                          jeux vidéos favoris ainsi qu'un teaser de jeu, et un petit calendrier des prochains jeux à sortir.
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Cosy Gaming</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../../src/html/index.html">Cosy Gaming</a></h1>
+    </header>
+
+    <!-- Début de la barre de navigation du site-->
+    <nav id="navSidebar">
+        <ul>
+            <li><img src="../../resources/images/BarreNavigationLaterale/home.png" alt="Icône d'une maison"><a href="../../src/html/index.html">Accueil</a></li>
+            <li><img src="../../resources/images/BarreNavigationLaterale/blog.png" alt="Icône d'une page web"><a href="../../src/html/blog.html">Blog</a></li>
+            <li><img src="../../resources/images/BarreNavigationLaterale/stat.png" alt="Icône d'un graphique"><a href="../../src/html/statistiques.html">Stats</a></li>
+            <li><img src="../../resources/images/BarreNavigationLaterale/contact.png" alt="Icône d'une note avec un stylo"><a href="../../src/html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Fin de la barre de navigation du site-->
+    
+    <!-- Début du component principal du blog-->
+    <section id="blog">
+
+        <!-- Début de la barre de navigation de la page-->
+        <nav id="navPage">
+            <ul>
+                <li>
+                    <a href="#aLaUne" class="active">A la une</a>
+                </li>
+                <li>
+                    <a href="#review" class="active">Nos reviews</a>
+                </li>
+                <li>
+                    <a href="#nosFavoris" class="active">Nos favoris</a>
+                </li>
+                <li>
+                    <a href="#sorties" class="active">Les prochaines sorties</a>
+                </li>
+            </ul>
+        </nav>  
+        <!-- Fin de la barre de navigation de la page-->
+
+        <!--Début section à la une-->
+        <div id="sectionALaUne">
+            <h2 id="aLaUne">A la une</h2>
+            <iframe src="https://www.youtube.com/embed/MMymnmbJBws"></iframe>        
+        </div>
+        <!--Fin section à la une-->
+
+        <!--Début section Reviews-->
+        <h2 id="review"> Nos reviews</h2>
+        <div id="reviews">
+            <div class="reviewArticle">
+                <div class="textReview">
+                    <h3>A Wildlife Adventure</h3>
+                    <p> "Wildlife Adventure" est un jeu captivant qui transporte les joueurs dans un monde sauvage rempli de défis passionnants et de missions variées. Les joueurs peuvent explorer des environnements vastes et magnifiques, interagir avec d'autres animaux et gagner des récompenses. Le jeu met en scène des animaux fascinants, chacun avec ses propres caractéristiques et défis. Les graphismes époustouflants rendent l'expérience de jeu encore plus immersive. Ce jeu est parfait pour les amoureux de la nature et les aventuriers.</p>
+                </div>
+                <img src="../../resources/images/Blog/wildlifeadventure.png" alt="capture d'écran du jeu montrant un personnage marchant sur un chemin en bois au dessus d'une mare" class="blog-img">
+            </div>
+            <div class="reviewArticle">
+                <div class="textReview">
+                    <h3>Kirby Star Allies</h3>
+                    <p>"Kirby Star Allies" est un jeu de plateforme mignon et amusant qui est parfait pour les joueurs de tous âges. Le jeu suit l'histoire de Kirby, un personnage rose en forme de boule, qui se lie d'amitié avec des alliés pour sauver leur monde. Les joueurs peuventexplorer des niveaux colorés et variés. Les nouveaux pouvoirs et capacités permettent aux joueurs de résoudre des énigmes et de vaincre des ennemis. Les graphismes colorés et les animations fluides rendent l'expérience de jeu encore plus agréable. "Kirby Star Allies" est un jeu divertissant et charmant qui plaira à tout le monde.</p>
+                </div>
+                <img src="../../resources/images/Blog/kirby.jpg" alt="capture d'écran du jeu montrant le personnage principal Kirby avec 2 autres personnages sur une plateforme" class="blog-img">
+            </div>
+            <div class="reviewArticle">
+                <div class="textReview">
+                    <h3>Bear and Breakfast</h3>
+                    <p>Bear and Breakfast est un jeu de simulation
+                        adorable qui vous met dans la peau d'un ours
+                        qui gère une auberge. Le jeu est charmant, avec
+                        des graphismes colorés et une bande-son
+                        relaxante. Vous devez construire, décorer et
+                        gérer votre auberge tout en satisfaisant les
+                        besoins de vos clients animaux. Les
+                        interactions avec les autres animaux de la forêt
+                        sont amusantes et surprenantes. Dans
+                        l'ensemble, Bear and Breakfast est un jeu cosy
+                        et divertissant qui plaira à tous les amateurs de
+                        jeux de gestion et de simulation. </p>                
+                </div>
+                <img src="../../resources/images/Blog/bearandbreakfast.jpg" alt="capture d'écran du jeu montrant un personnage marchant sur un chemin en bois au dessus d'une mare" class="blog-img">
+            </div>
+        </div>
+        <!--Fin section Reviews-->
+
+        <!--Début section Nos Favoris-->
+        <h2 id="nosFavoris">Nos favoris</h2>
+        <div class="nosFavoris">
+
+            <!--PREMIERE LIGNE D'ARTICLES-->
+            <div id="firstRowFavoris">
+                <div id="ACNH">
+                    <img src="../../resources/images/Blog/acnh.jpg" alt="Photo représentant des personnages du jeu animal crossing en train de faire diverses activités comme du jardinage, des balades">
+                    <h4>La vie insulaire de vos rêves : notre critique d'Animal Crossing New Horizons</h4>
+                    <div class="signature">
+                        <img src="../../resources/images/Blog/pp-writer.jpg" alt="Image 3D de l'autrice de l'article">
+                        <h5>Par Samira Crossing</h5>
+                    </div>
+                    <p>
+                        Animal Crossing: New Horizons est le rêve éveillé de tout cosy gamer. Les activités reposantes, comme la pêche, l'horticulture, et la décoration intérieure, s'accompagnent d'une bande-son douce et apaisante. Si l'absence de scénario linéaire peut dérouter certains, la liberté de construire son paradis insulaire compense largement. Avec ses personnages charmants et son esthétique chaleureuse, Animal Crossing: New Horizons incarne la quintessence du cosy gaming.
+                    </p>
+                </div>
+                <div id="stardew">
+                    <img src="../../resources/images/Blog/stardew-valley.jpg" alt="Image venant du jeu stardew valley représentant une maison avec des personnages sur un cheval et collectant du maìs">
+                    <h4>De la ville à la ferme : notre critique de
+                        Stardew Valley</h4>
+                    <div class="signature">
+                        <img src="../../resources/images/Blog/pp-writer.jpg" alt="Image 3D de l'autrice de l'article">
+                        <h5>Par Samira Crossing</h5>
+                    </div>
+                    <p>
+                        Stardew Valley est un incontournable du cosy gaming qui offre une expérience agricole immersive dans un monde pixelisé charmant. La gestion de votre propre ferme, l'interaction avec les villageois, et l'exploration des environnements bucoliques créent une atmosphère apaisante et satisfaisante. La variété des tâches à accomplir et l'aspect narratif riche ajoutent une profondeur inattendue à ce jeu. Stardew Valley est une ode à la vie rurale qui vous invite à ralentir, à vous détendre, et à savourer chaque moment.
+                    </p>
+                </div>
+            </div>
+            <!--FIN PREMIERE LIGNE D'ARTICLES-->
+
+            <!--DEUXIEME LIGNE D'ARTICLES-->
+            <div id="secondRowFavoris">
+                <div id="childrenOfTheLight">
+                    <img src="../../resources/images/Blog/Sky-Children-Of-Light.png" alt="Photo représentant des personnages du jeu animal crossing en train de faire diverses activités comme du jardinage, des balades">
+                    <h4>Children of the Light : une quête lumineuse à travers le cosy gaming</h4>
+                        <div class="signature">
+                            <img src="../../resources/images/Blog/pp-writer.jpg" alt="Image 3D de l'autrice de l'article">
+                            <h5>Par Samira Crossing</h5>
+                        </div>
+                    <p>Children of the Light offre une expérience de jeu unique, enveloppée d'une atmosphère cosy à souhait. Le design éthéré et les mécaniques de jeu coopératives captivent et invitent à l'exploration et à l'entraide. Si l'on peut regretter un certain manque de challenge, l'émotion véhiculée par la beauté des paysages et la bande-son poignante compense largement ce défaut. Un véritable havre de paix pour les amateurs de cosy gaming.</p>
+                </div>
+                <div id="tchia">
+                    <img src="../../resources/images/Blog/tchia.png" alt="Image venant du jeu stardew valley représentant une maison avec des personnages sur un cheval et collectant du maìs">
+                    <h4>Tchia: Une exploration insulaire enchanteresse pour les amateurs de cosy gaming</h4>
+                        <div class="signature">
+                            <img src="../../resources/images/Blog/pp-writer.jpg" alt="Image 3D de l'autrice de l'article">
+                            <h5>Par Samira Crossing</h5>
+                        </div>
+                    <p>Tchia est un joyau du cosy gaming qui offre une immersion dans un univers tropical riche et coloré. Le jeu séduit par sa jouabilité qui encourage l'exploration et la découverte, sans pression ni contraintes. Les paysages pittoresques, la bande sonore entraînante et l'interaction douce avec les animaux et la nature créent une expérience relaxante et apaisante. Tchia est une véritable invitation au voyage, un hymne à la beauté simple et sans fioritures du monde qui nous entoure.</p>
+                </div>
+            </div>
+            <!--FIN DEUXIEME LIGNE D'ARTICLES-->
+        </div>
+        <!--Fin section Nos Favoris-->
+
+        <!--Début section les prochaines sorties-->
+        <h2 id="sorties">Les prochaines sorties</h2>
+        <div id="prochainesSorties">
+            <div id="dates">
+                <p>12 <br> avril</p>
+                <p>12 <br> mai</p>
+                <p>22 <br> mai</p>
+                <p>6 <br> juin</p>
+                <p>5 <br> août</p>
+            </div>
+            <div id="titresJeux">
+                <p>Cozy Grove</p>
+                <p>Chicoru : A Colorful Tale</p>
+                <p>Garden Story</p>
+                <p>Hokko Life</p>
+                <p>Eastward</p>
+            </div>
+        </div>
+        <!--Fin section les prochaines sorties-->
+
+    </section>
+    <!-- Fin du component principal du blog-->
+
+    <!--Début footer-->
+    <footer>
+        <div id="logo">
+            <a href="../../src/html/index.html"><img src="../../resources/images/icons/logo.PNG" alt="logo du blog"></a>
+        </div>
+        <ul>
+            <li>
+                <a href="../../src/html/index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="../../src/html/blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="../../src/html/statistiques.html">Statistiques</a>
+            </li>
+            <li>
+                <a href="../../src/html/contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <div id="socialMedias">
+            <a href="https://www.instagram.com/cozy.games/?hl=fr"><img src="../../resources/images/icons/instagram.png" alt="Logo d'instagram"></a>
+            <a href="https://twitter.com/cozy__games"><img src="../../resources/images/icons/twitter.png" alt="logo de twitter"></a>
+            <a href="https://www.twitch.tv/cozygames"><img src="../../resources/images/icons/twitch.png" alt="logo de twitch"></a>
+        </div>
+
+        <div id="newsletterForm">
+            <label for="email">Inscris toi à notre newsletter</label>
+            <div id="mailSaisie">
+                <input type="email" id="email" placeholder="Ecris ton email ici">
+                <button>OK</button>
+            </div>
+        </div>
+    </footer>
+    <!--Fin footer-->
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+        <!--
+        Autrice         : ABID Fatima
+        Date            : 04.06.2023
+        Description     : page des statistiques concernant les types de joueurs et leurs habitudes de jeux.
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>Cosy Gaming</title>
+</head>
+<body>
+    <header>
+        <h1><a href="../../src/html/index.html">Cosy Gaming</a></h1>
+    </header>
+
+    <!-- Début de la barre de navigation du site-->
+    <nav id="navSidebar">
+        <ul>
+            <li><img src="../../resources/images/BarreNavigationLaterale/home.png" alt="Icône d'une maison"><a href="../../src/html/index.html">Accueil</a></li>
+            <li><img src="../../resources/images/BarreNavigationLaterale/blog.png" alt="Icône d'une page web"><a href="../../src/html/blog.html">Blog</a></li>
+            <li><img src="../../resources/images/BarreNavigationLaterale/stat.png" alt="Icône d'un graphique"><a href="../../src/html/statistiques.html">Stats</a></li>
+            <li><img src="../../resources/images/BarreNavigationLaterale/contact.png" alt="Icône d'une note avec un stylo"><a href="../../src/html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Fin de la barre de navigation du site-->
+
+    <!-- Début du component principal du blog-->
+    <section class="statistiques">
+        <!--Début barre de navigation de la page-->
+        <nav id="navPage">
+            <ul>
+                <li>
+                    <a href="#profile"> Profil des joueurs et joueuses</a>
+                </li>
+                <li>
+                    <a href="#gaming">Habitudes de jeu</a> 
+                </li>
+            </ul>
+        </nav>  
+        <!--Fin barre de navigation de la page-->
+
+            <p class="explanation">
+                Les diagrammes et graphiques de cette page sont tous construits à 
+                partir des données collectés dans l’étude menés par le Syndicat des 
+                éditeurs de logiciels de loisirs (SELL) et la société Médiamétrie 
+                spécialisés dans la mesure d’audience et l’étude des usages des médias 
+                audiovisuels et numériques en France. Ces deux groupes ont mené ensemble une étude nommée les Français et le Jeu Vidéo qui a été réalisée sur Internet du 24 
+                échantillon de 4001 internautes de 10 ans et plus. 
+            </p>
+
+        <!--Début explication profiles-->
+        <h2 class="active" id="profile">Profil des joueurs et joueuses</h2>
+        <div class="topGraphLeft">
+            <img src="../../resources/images/Stats/Les-classes-d'age-des-joueurs-et-joueuses.png" alt="Diagramme radar représentant les classes d'âge des joueurs de jeux vidéos">
+            <p class="explanation">
+                Ce diagramme radar illustre clairement la diversité des âges des 
+                joueurs de jeux vidéo. S’il est vrai qu’une grande partie des moins de 
+                25 jouent aux jeux vidéo, le graphique montre également que les autres tranches d'âges sont également concernées. 60 à 80% des 
+                personnes ayant entre 35 et 64 ans jouent aux jeux vidéo. Ce 
+                diagramme met en évidence la diversité des joueurs de jeux vidéo, 
+                démontrant ainsi que contrairement aux stéréotypes, les jeux vidéo ne sont pas uniquement destinés aux adolescents, mais attirent 
+                également des joueurs de toutes les tranches d'âges.
+            </p>    
+        </div>
+        <div id="topGraphRight">
+            <img src="../../resources/images/Stats/Répartition-des-joueurs-et-joueuses-de-jeux-vidéos-genre.png" alt="Diagramme donut">
+            <p class="explanation">
+            Ce diagramme donut montre que les femmes représentent une part importante des joueurs de jeux vidéo, avec 47% d'entre 
+            elles jouant régulièrement, soit une proportion proche de celle des hommes, qui s'élève à 53%. Ces données réfutent les 
+            préjugés qui présentent les jeux vidéo comme un loisir principalement masculin. 
+            Au contraire, les joueuses sont une composante essentielle de l'industrie du jeu vidéo et leur 
+            présence ne cesse de croître. Les développeurs de jeux prennent de plus en plus compte de cette diversité et proposent 
+            des expériences de jeu inclusives pour tous les publics.
+            </p>
+        </div>
+        <div class="topGraphLeft">
+            <img src="../../resources/images/Stats/La-sociabilité-et-les-jeux-vidéos.png" alt="Diagramme à barre">
+            <p class="explanation">
+            Si tu fais partie des personnes qui pensent encore que les joueurs de 
+            jeux vidéo passent leur temps seuls, enfermés dans leur chambre, sans 
+            aucune vie sociale, ce diagramme va te faire changer d'avis ! En effet, 
+            en plus d’avoir une vie sociale comme les autres, les joueurs et joueuses ont en plus une vie sociale enrichie grâce à leurs jeux vidéo 
+            préférés. Plus de 50% des participant es du sondage ont rencontré physiquement d’autres joueurs ou joueuses, et 30 à 40% d’entre eux échangent en privé sur leurs réseaux sociaux. Les jeux vidéo 
+            participent à la sociabilisation des joueurs et joueuses en les rassemblant autour de passions et d’intérêts communs et 
+            divertissants.
+            </p>
+        </div>
+        <!--Fin explication profiles-->
+
+        <!--Début explication habitudes-->
+        <h2 class="active" id="gaming">Habitudes de jeu</h2>
+        <div id="bottomGraphs">
+            <img src="../../resources/images/Stats/Top-10-des-genres-de-jeux-joués-en-France.png" alt="Diagramme à barres" class="type-of-game">
+            <p class="explanation">
+                Dans ce diagramme à barres classant les types de jeux vidéo préférés 
+                des joueurs et joueuses interrogés on peut y voir que contrairement 
+                aux idées reçus selon lesquelles les jeux vidéos sont des jeux violents, 
+                de guerre, de combats etc. le top 3 réflète une toute autre réalité. En 
+                effet, parmi les genres de jeux prisés on y trouve le casual gaming ou 
+                cosy gaming avec 36% des personnes interrogés qui y jouent, et à 
+                égalité les courses automobiles, les jeux de plateforme, et les jeux de rôle avec 24% de participation. Au final, on peut voir que les jeux de 
+                combat n’occupe pas une place importante dans le choix des joueurs et joueuses puisque seuls 11% des interrogés l’ont ajouté dans leurs 
+                genres de jeu favoris.
+            </p>
+            <img src="../../resources/images/Stats/Motivations-pour-jouer.png" alt="Diagramme radar" class="motivations"> 
+            <p class="explanation">
+                Ce diagramme radar met en évidence les six principales 
+                motivations des joueurs de jeux vidéo. Les résultats montrent 
+                que les deux motivations principales des joueurs sont de 
+                s'amuser, et de se détendre. Ces résultats soulignent donc que 
+                les jeux vidéo peuvent être un véritable moyen de relaxation 
+                pour les joueurs qui les aident à réduire leur niveau de stress, 
+                c’est notamment le cas pour le cosy gaming qui permet de se 
+                plonger dans un monde virtuel où l'on peut relâcher sa 
+                concentration, se changer les idées tout en étant 
+                confortablement installé chez soi. C'est une raison pour 
+                laquelle le cosy gaming est de plus en plus apprécié.Par 
+                ailleurs, il est important de noter que d'autres motivat ions, 
+                telles que l'apprentissage et l'entraînement, sont également 
+                fréquentes chez les joueurs, représentant ainsi un potentiel 
+                éducatif pour les joueurs et joueuses.
+            </p>
+        </div>
+        <!--Fin explication habitudes-->
+
+    <!-- Fin du component principal du blog-->
+    </section>
+
+    <!--Début footer-->
+    <footer>
+        <div id="logo">
+            <a href="../../src/html/index.html"><img src="../../resources/images/icons/logo.PNG" alt="logo du blog"></a>
+        </div>
+        <ul>
+            <li>
+                <a href="../../src/html/index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="../../src/html/blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="../../src/html/statistiques.html">Statistiques</a>
+            </li>
+            <li>
+                <a href="../../src/html/contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <div id="socialMedias">
+            <a href="https://www.instagram.com/cozy.games/?hl=fr"><img src="../../resources/images/icons/instagram.png" alt="Logo d'instagram"></a>
+            <a href="https://twitter.com/cozy__games"><img src="../../resources/images/icons/twitter.png" alt="logo de twitter"></a>
+            <a href="https://www.twitch.tv/cozygames"><img src="../../resources/images/icons/twitch.png" alt="logo de twitch"></a>
+        </div>
+
+        <div id="newsletterForm">
+            <label for="email">Inscris toi à notre newsletter</label>
+            <div id="mailSaisie">
+                <input type="email" id="email" placeholder="Ecris ton email ici">
+                <button>OK</button>
+            </div>
+        </div>
+    </footer>
+    <!--Fin footer-->
+</body>
+</html>
