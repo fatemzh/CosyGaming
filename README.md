@@ -7,7 +7,7 @@ Page d'accueil : Une introduction chaleureuse à l'univers du cosy gaming.
 Blog principal : Des avis et commentaires sur différents jeux de cosy gaming.
 Page de statistiques : Des analyses détaillées des tendances et des profils des joueurs.
 Page de contact : Un espace pour les visiteurs pour nous joindre et partager leurs pensées ou questions.
-
+ 
 Technologies Utilisées 💻
 HTML/CSS : Pour une structure claire et un design réactif.
 
