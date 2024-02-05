@@ -1,5 +1,5 @@
 Cosy Gaming Website 🎮🛋️
-
+ 
 À propos du projet 🌟
 
 Bienvenue sur le dépôt GitHub du projet Cosy Gaming Website - une plateforme dédiée à l'univers chaleureux et accueillant du cosy gaming 🍵📚. 
