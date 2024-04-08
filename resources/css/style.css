@@ -647,7 +647,7 @@ button{
 @media screen and (min-width: 769px) {
 
     body{
-        /* NE PAS TOUCHER SINON LE FOOTER CHANGE DE TAILLE */
+        
         width: 100%; 
     }
 
@@ -668,6 +668,7 @@ button{
         display: flex;
         flex-direction: column;
         flex: 1;
+        height: 45px;
     }
 
     #navSidebar ul li a{
@@ -679,6 +680,7 @@ button{
     #navSidebar ul li img {
         height: 40px;
         width: 40px;
+        padding: 0 auto;
     }
 
         /*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW NAVBAR (PAGE BLOG ET STATISTIQUES SEULEMENT) WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
